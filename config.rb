@@ -1,5 +1,6 @@
 set :css_dir, "assets/stylesheets"
 set :images_dir, "assets/images"
+set :github_log_in_url, "#{ENV.fetch("GIT_HUB_LOG_IN_URL", "https://app.accesslint.com")}/auth/github"
 
 activate :aria_current
 activate :autoprefixer

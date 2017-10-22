@@ -24,6 +24,12 @@ This is the AccessLint website. It’s built with [Middleman].
     bundle exec middleman
     ```
 
+optionally with ngrok:
+
+    ```
+    GIT_HUB_LOG_IN_URL=https://<subdomain>.ngrok.io bundle exec middleman
+    ```
+
     ```
     open http://localhost:4567
     ```
