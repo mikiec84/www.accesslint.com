@@ -7,7 +7,10 @@
     <div class="c-site-header__nav">
       <%= current_link_to "Blog", "/blog/" %>
       <%= link_to "Help", data.site.help_url %>
-      <%= link_to "Log in", config[:github_log_in_url] %>
+      <%= link_to(
+        "Log in",
+        ENV.fetch("GIT_HUB_LOG_IN_URL", data.site.log_in_url)
+      ) %>
     </div>
   </div>
 </header>

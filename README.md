@@ -24,15 +24,30 @@ This is the AccessLint website. It’s built with [Middleman].
     bundle exec middleman
     ```
 
-optionally with ngrok:
-
-    ```
-    GIT_HUB_LOG_IN_URL=https://<subdomain>.ngrok.io bundle exec middleman
-    ```
-
     ```
     open http://localhost:4567
     ```
+
+## Authentication and Reviews in Development
+
+If you want to authenticate and post Reviews from your development environment,
+you'll need to run the AccessLint app with `ngrok` and then point the login url
+to that url by setting `GIT_HUB_LOG_IN_URL` in `.env` and GitHub App settings.
+
+1. Run `ngrok http localhost:5000`
+
+1. Copy ngrok url from the previous step (looks like https://<example>.ngrok.io)
+
+1. Set ngrok url at https://github.com/organizations/AccessLint/settings/apps/accesslint-development
+
+1. Set ngrok url in path/to/development/app.accesslint.com/.env
+
+1. Set ngrok url in path/to/development/www.accesslint.com/.env
+
+1. Run your development servers for www and app.
+
+Now when you visit localhost:4567 and login, you'll be redirected to your
+development instance of app.accesslint.com via the ngrok url.
 
 ## Hosting & Deployment
 
