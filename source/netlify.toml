@@ -1,0 +1,23 @@
+[build]
+  publish = "build"
+  command = "bundle exec middleman build --verbose"
+
+[[redirects]]
+  from = "/changes/"
+  to = "/blog/tags/changes/"
+  status = 301
+
+[[redirects]]
+  from = "/results/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/sign_in/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/sign_up/"
+  to = "/"
+  status = 301
