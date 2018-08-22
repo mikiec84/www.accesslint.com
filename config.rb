@@ -3,6 +3,7 @@ set :images_dir, "assets/images"
 
 activate :aria_current
 activate :autoprefixer
+activate :inline_svg
 
 activate :blog do |blog|
   blog.generate_day_pages = false
