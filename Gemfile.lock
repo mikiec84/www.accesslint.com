@@ -121,15 +121,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bourbon (~> 5.1.0)
-  builder (~> 3.2)
-  middleman (~> 4.2)
-  middleman-aria_current (~> 0.1)
-  middleman-autoprefixer (~> 2.9)
-  middleman-blog (~> 4.0)
+  bourbon
+  builder
+  middleman
+  middleman-aria_current
+  middleman-autoprefixer
+  middleman-blog
   middleman-inline_svg
-  middleman-minify-html (~> 3.4)
-  sass (~> 3.4)
+  middleman-minify-html
+  sass
 
 RUBY VERSION
    ruby 2.4.3p205
