@@ -21,3 +21,8 @@
   from = "/sign_up/"
   to = "/"
   status = 301
+
+[[redirects]]
+  from = "https://accesslint.netlify.com/*"
+  to = "https://www.accesslint.com/:splat"
+  status = 301
