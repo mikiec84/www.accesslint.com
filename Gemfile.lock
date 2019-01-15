@@ -130,7 +130,6 @@ DEPENDENCIES
   middleman-blog
   middleman-inline_svg
   middleman-minify-html
-  sass
 
 RUBY VERSION
    ruby 2.4.3p205
